@@ -1,0 +1,18 @@
+@mixin gap($side, $size) {
+  $space: var(--base-size);
+
+  @if $size == 600 {
+    $space: var(--size-lg);
+  }
+
+  @if $size == 700 {
+    $space: var(--size-xl);
+  }
+
+  .gap-#{$side}-#{$size} {
+    margin-#{$side}: $space;
+  }
+}
+
+@include gap(top, 600);
+@include gap(top, 700);

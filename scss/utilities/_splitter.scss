@@ -1,0 +1,19 @@
+.splitter {
+  > :last-child {
+    margin-top: 1rem;
+  }
+
+  @media screen and (min-width: $breakpoint-md) {
+    display: flex;
+
+    > * {
+      flex-grow: 1;
+    }
+
+    > :last-child {
+      margin-top: 0;
+      margin-left: 1rem;
+      min-width: 22rem;
+    }
+  }
+}

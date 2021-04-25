@@ -1,0 +1,13 @@
+.summary {
+  padding: var(--size-sm) var(--size-sm) var(--base-size) var(--size-sm);
+  line-height: 1.1;
+
+  dl,
+  dt {
+    --flow-space: var(--size-lg);
+  }
+
+  dd {
+    --flow-space: var(--size-sm);
+  }
+}

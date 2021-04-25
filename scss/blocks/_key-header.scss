@@ -1,0 +1,20 @@
+.key-header {
+  align-items: flex-end;
+
+  > :last-child {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--size-sm);
+
+    > * {
+      flex-shrink: 0;
+      margin: 0.2rem 0 0 0.2rem;
+    }
+  }
+
+  @media screen and (min-width: $breakpoint-md) {
+    > :last-child {
+      justify-content: flex-end;
+    }
+  }
+}

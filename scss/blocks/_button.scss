@@ -1,0 +1,32 @@
+.button {
+  @extend .radius;
+
+  font: inherit;
+  display: inline-block;
+  line-height: 1;
+  text-decoration: none;
+  border: 1px solid var(--secondary);
+  background: var(--secondary);
+  padding: 0.6rem 1.5rem;
+  position: relative;
+
+  &[data-variant='ghost'] {
+    border-color: currentColor;
+    background: transparent;
+  }
+
+  &:focus {
+    outline-offset: -0.4rem;
+    outline: 1px solid;
+  }
+
+  &:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: var(--light);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}

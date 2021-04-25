@@ -1,0 +1,47 @@
+@mixin background($name) {
+  background: var(--#{$name});
+}
+
+@mixin color($name) {
+  color: var(--#{$name});
+}
+
+.bg-primary {
+  @include background(primary);
+}
+
+.bg-light {
+  @include background(light);
+}
+
+.bg-secondary {
+  @include background(secondary);
+}
+
+.bg-tertiary {
+  @include background(tertiary);
+}
+
+.bg-tertiary-glare {
+  @include background(tertiary-glare);
+}
+
+.color-light {
+  @include color(light);
+}
+
+.color-primary {
+  @include color(primary);
+}
+
+.color-secondary-shade {
+  @include color(secondary-shade);
+}
+
+.color-tertiary {
+  @include color(tertiary);
+}
+
+.color-tertiary-glare {
+  @include color(tertiary-glare);
+}
